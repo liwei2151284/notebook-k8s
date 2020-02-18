@@ -40,5 +40,5 @@
 #      port: 27017
 
 server:
-#  context-path: /accounts
-  port: 6000
+#  context-path: /students
+  port: 8080
