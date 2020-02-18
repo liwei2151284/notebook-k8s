@@ -1,12 +1,0 @@
-
-U	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(ñúº
-NWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(€áÃëûÿÿÿÿ
-CWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(İ·ÄÑ
-HWeb:TableWithoutCaptionCheck" Add a description to this table.(¤ÁÚˆ
-l Web:TableHeaderHasIdOrScopeCheck!";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ûéú»ÿÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck"";Add either an 'id' or a 'scope' attribute to this <th> tag.(æËİâ
-l Web:TableHeaderHasIdOrScopeCheck#";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ş”šîûÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck$";Add either an 'id' or a 'scope' attribute to this <th> tag.(£‚‘Ì
-l Web:TableHeaderHasIdOrScopeCheck%";Add either an 'id' or a 'scope' attribute to this <th> tag.(È Ïüÿÿÿÿ
-HWeb:BoldAndItalicTagsCheck."Replace this <i> tag by <em>.(„É¦üûÿÿÿÿ
-CWeb:BoldAndItalicTagsCheck1"Replace this <i> tag by <em>.(¼¯©ö
