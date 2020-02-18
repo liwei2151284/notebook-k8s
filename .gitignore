@@ -5,4 +5,4 @@
 *.tgz
 **/.sts4-cache/*
 ../**/*
-
+.idea/
