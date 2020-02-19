@@ -3,16 +3,23 @@ spring:
     name: registry
   cloud:
     config:
-      uri: http://config:8888
+      uri: http://config:${CONFIG_SERVICE_PORT}
       fail-fast: true
       password: ${CONFIG_SERVICE_PASSWORD}
       username: user
 
+server:
+  port: 8761
+
 eureka:
+  numberRegistrySyncRetries: 1
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
+    hostname: eureka-server
   client:
     registerWithEureka: false
     fetchRegistry: false
-    server:
-      waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  server:
+    enable-self-preservation: true

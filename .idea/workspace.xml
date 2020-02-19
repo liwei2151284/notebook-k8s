@@ -2,27 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8391782f-2aa8-472f-884a-21d19c690848" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/buildAndPushImage.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/deployToK8s.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/runOnLocal.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery/buildAndPushImage.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery/deployToK8s.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery/runOnLocal.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/buildAndPushImage.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/deployToK8s.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/runOnLocal.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cleanK8s.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/templates/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/account/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/templates/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/charts/discovery/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/discovery.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/gateway.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/jenkins.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/mysql-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/notebook.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kube-deploy/zipkin.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebook/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runAllinK8s.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/config/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/shared/notebook.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/shared/notebook.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/target/config-2.1.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/target/config-2.1.12.RELEASE.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/buildAndPushImage.sh" beforeDir="false" afterPath="$PROJECT_DIR$/config/buildAndPushImage.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/deployToK8s.sh" beforeDir="false" afterPath="$PROJECT_DIR$/config/deployToK8s.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/buildAndPushImage.sh" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/buildAndPushImage.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/deployToK8s.sh" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/deployToK8s.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery/target/discovery-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/target/discovery-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discovery/target/discovery-1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/target/discovery-1.0.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/discovery/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/buildAndPushImage.sh" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/buildAndPushImage.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/deployToK8s.sh" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/deployToK8s.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/target/surefire-reports/TEST-net.javaguides.springboot.tutorial.ApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/target/surefire-reports/TEST-net.javaguides.springboot.tutorial.ApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/target/surefire-reports/net.javaguides.springboot.tutorial.ApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/target/surefire-reports/net.javaguides.springboot.tutorial.ApplicationTests.txt" afterDir="false" />
     </list>
@@ -37,61 +57,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebook/pom.xml">
+        <entry file="file://$PROJECT_DIR$/kube-deploy/discovery.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="39" selection-start-line="39" selection-end-line="42" selection-end-column="21" />
+            <state relative-caret-position="256">
+              <caret line="36" column="40" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebook/runOnLocal.sh">
+        <entry file="file://$PROJECT_DIR$/runAllinK8s.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebook/src/main/java/net/javaguides/springboot/tutorial/Application.java">
+        <entry file="file://$PROJECT_DIR$/discovery/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/runOnLocal.sh">
+        <entry file="file://$PROJECT_DIR$/kube-deploy/notebook.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/notebook/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="150">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -99,39 +100,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/notebook.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state relative-caret-position="565">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notebook/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="180">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebook/src/main/java/net/javaguides/springboot/tutorial/controller/StudentController.java">
+        <entry file="file://$PROJECT_DIR$/discovery/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="27" />
-              <folding>
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/registry.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kube-deploy/config.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -148,7 +163,22 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>jpa</find>
+      <find>/docker/notebook-k8s/discovery-service:latest</find>
+      <find>account</find>
+      <find>5555</find>
+      <find>2222</find>
+      <find>../</find>
+      <find>localhost</find>
+      <find>server.port</find>
+      <find>CONFIG_SERVICE_PORT</find>
+      <find>DISCOVERY_SERVICE_PORT</find>
+      <find>8888</find>
+      <find>222</find>
     </findStrings>
+    <replaceStrings>
+      <replace>config</replace>
+      <replace>8888</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -160,13 +190,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/discovery/src/main/java/org/wangqing/notebookk8s/discovery/DiscoveryApplication.java" />
         <option value="$PROJECT_DIR$/discovery/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/discovery/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/discovery/pom.xml" />
         <option value="$PROJECT_DIR$/config/src/main/java/config/DiscoveryApplication.java" />
         <option value="$PROJECT_DIR$/config/src/main/java/discovery/DiscoveryApplication.java" />
         <option value="$PROJECT_DIR$/config/src/main/java/org/wangqing/notebookk8s/config/Application.java" />
         <option value="$PROJECT_DIR$/notebook/src/main/java/net/javaguides/springboot/tutorial/Application.java" />
-        <option value="$PROJECT_DIR$/notebook/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/config/pom.xml" />
         <option value="$PROJECT_DIR$/discovery/runOnLocal.sh" />
         <option value="$PROJECT_DIR$/config/runOnLocal.sh" />
@@ -176,6 +204,24 @@
         <option value="$PROJECT_DIR$/config/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/notebook/.gitignore" />
+        <option value="$PROJECT_DIR$/discovery/deployToK8s.sh" />
+        <option value="$PROJECT_DIR$/config/deployToK8s.sh" />
+        <option value="$PROJECT_DIR$/config/buildAndPushImage.sh" />
+        <option value="$PROJECT_DIR$/discovery/buildAndPushImage.sh" />
+        <option value="$PROJECT_DIR$/notebook/buildAndPushImage.sh" />
+        <option value="$PROJECT_DIR$/discovery/Dockerfile" />
+        <option value="$PROJECT_DIR$/notebook/deployToK8s.sh" />
+        <option value="$PROJECT_DIR$/kube-deploy/notebook.yaml" />
+        <option value="$PROJECT_DIR$/notebook/Dockerfile" />
+        <option value="$PROJECT_DIR$/config/Dockerfile" />
+        <option value="$PROJECT_DIR$/cleanK8s.sh" />
+        <option value="$PROJECT_DIR$/kube-deploy/discovery.yaml" />
+        <option value="$PROJECT_DIR$/kube-deploy/config.yaml" />
+        <option value="$PROJECT_DIR$/deployAlltoK8s.sh" />
+        <option value="$PROJECT_DIR$/runAllinK8s.sh" />
+        <option value="$PROJECT_DIR$/config/src/main/resources/shared/registry.yml" />
+        <option value="$PROJECT_DIR$/discovery/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/notebook/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -204,6 +250,9 @@
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -256,18 +305,42 @@
               <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
               <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
               <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="discovery" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="discovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="discovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="discovery" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="kube-deploy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
               <item name="notebook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -280,7 +353,16 @@
               <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
               <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
               <item name="notebook" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="notebook-k8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="notebook-k8s" type="462c0819:PsiDirectoryNode" />
+              <item name="notebook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,7 +376,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/discovery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -305,11 +387,11 @@
       <recent name="config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/discovery" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/discovery" />
       <recent name="$PROJECT_DIR$/notebook" />
-      <recent name="$PROJECT_DIR$/notebook/src/main/resources" />
-      <recent name="$PROJECT_DIR$/discovery/src/main/resources" />
+      <recent name="$PROJECT_DIR$/kube-deploy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,7 +489,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/update-student.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/add-student.html" />
@@ -424,19 +505,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/src/main/java/config/DiscoveryApplication.java" />
     <entry file="file://$PROJECT_DIR$/config/src/main/java/discovery/DiscoveryApplication.java" />
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/statistics-service.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/registry.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/src/main/java/org/wangqing/notebookk8s/config/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -451,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="26" selection-start-line="26" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -492,33 +553,10 @@
     <entry file="file://$PROJECT_DIR$/discovery/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/buildAndPushImage.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/buildAndPushImage.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/deployToK8s.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/discovery/runOnLocal.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -540,38 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/runOnLocal.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notebook/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="39" selection-start-line="39" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/runOnLocal.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/notebook.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -585,7 +595,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -593,6 +603,186 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kube-deploy/charts/account/templates/NOTES.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery/runOnLocal.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery/deployToK8s.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/runOnLocal.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/gateway.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deployToK8s.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanK8s.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/deployToK8s.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="26" selection-start-line="26" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/notification-service.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/runOnLocal.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/buildAndPushImage.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/statistics-service.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/buildAndPushImage.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kube-deploy/gateway.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery/buildAndPushImage.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runAllinK8s.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kube-deploy/discovery.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kube-deploy/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/registry.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kube-deploy/notebook.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/shared/notebook.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
         </state>
       </provider>
     </entry>
