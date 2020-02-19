@@ -1,8 +1,8 @@
 /.project
 /.settings/
 **/*.iml
-**/*.idea/
+**/.idea/
 *.tgz
 **/.sts4-cache/*
-../**/*
+**/target/
 .idea/*
