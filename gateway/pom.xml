@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.wangqing.notebook-k8s</groupId>
-	<artifactId>gataway</artifactId>
+	<artifactId>gateway</artifactId>
 	<version>1.0</version>
-	<name>gataway</name>
+	<name>gateway</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
