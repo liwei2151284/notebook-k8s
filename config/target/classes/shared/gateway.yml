@@ -17,12 +17,12 @@ zuul:
   routes:
     notebook:
       path: /notebook/**
-      serviceId: notebook
+      url: http://notebook:8080
 
 
 ribbon:
   eureka:
-    enabled: true
+    enabled: false
 
 eureka:
   client:
