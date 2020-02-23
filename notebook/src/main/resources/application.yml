@@ -1,20 +1,9 @@
-#spring:
-#  application:
-#    name: notebook
-#  cloud:
-#    config:
-#      uri: http://config:8888
-#      fail-fast: true
-#      password: ${CONFIG_SERVICE_PASSWORD}
-#      username: user
-
-
 server:
   port: ${PORT:8080}
 
 spring:
   application:
-    name: notebook-service
+    name: notebook
   cloud:
     config:
       uri: http://config:8888
@@ -27,8 +16,8 @@ spring:
     level:
       org.springframework: WARN
       org.hibernate: WARN
-  zipkin:
-    base-url: http://${ZIPKIN_SERVER}:${ZIPKIN_SERVER_PORT}
+#  zipkin:
+#    base-url: http://${ZIPKIN_SERVER}:${ZIPKIN_SERVER_PORT}
 
 eureka:
   client:
@@ -36,8 +25,8 @@ eureka:
       defaultZone:  ${DISCOVERY_URL:http://eureka-server:8761}/eureka/
   instance:
     preferIpAddress: true
-      #    leaseRenewalIntervalInSeconds: 1
-      #    leaseExpirationDurationInSeconds: 2
+    #    leaseRenewalIntervalInSeconds: 1
+    #    leaseExpirationDurationInSeconds: 2
     #    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
 
 ribbon:

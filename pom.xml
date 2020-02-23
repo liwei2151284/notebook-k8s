@@ -7,6 +7,7 @@
 		<module>discovery</module>
         <module>notebook</module>
 		<module>config</module>
+		<module>gateway</module>
 	</modules>
 
 	<groupId>org.wangqing.notebook-k8s</groupId>

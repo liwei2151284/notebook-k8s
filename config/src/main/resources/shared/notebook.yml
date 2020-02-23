@@ -1,44 +1,15 @@
-#security:
-#  oauth2:
-#    client:
-#      clientId: account-service
-#      clientSecret: ${ACCOUNT_SERVICE_PASSWORD}
-#      accessTokenUri: http://auth-service:5000/uaa/oauth/token
-#      grant-type: client_credentials
-#      scope: server
-#
-#spring:
-#  data:
-#    mongodb:
-#      host: account-mongodb
-#      username: user
-#      password: ${MONGODB_PASSWORD}
-#      database: piggymetrics
-#      port: 27017
-#
-#server:
-#  context-path: /accounts
-#  port: 6000
-
-
-#security:
-#  oauth2:
-#    client:
-#      clientId: account-service
-#      clientSecret: ${ACCOUNT_SERVICE_PASSWORD}
-#      accessTokenUri: http://auth-service:5000/uaa/oauth/token
-#      grant-type: client_credentials
-#      scope: server
-
-#spring:
-#  data:
-#    mongodb:
-#      host: account-mongodb
-#      username: user
-#      password: ${MONGODB_PASSWORD}
-#      database: piggymetrics
-#      port: 27017
-
+spring:
+  application:
+    name: notebook
+#  zipkin:
+#    base-url: http://${ZIPKIN_SERVER}:${ZIPKIN_SERVER_PORT}
 server:
-#  context-path: /students
+#  context-path: /notebook
   port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  ${DISCOVERY_URL:http://eureka-server:8761}/eureka/
+  instance:
+    preferIpAddress: true
