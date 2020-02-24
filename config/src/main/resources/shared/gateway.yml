@@ -37,3 +37,11 @@ logging:
   level:
     ROOT: INFO
     org.springframework.web: DEBUG
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: info, health, routes
