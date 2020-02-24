@@ -17,7 +17,7 @@ zuul:
   routes:
     notebook:
       path: /notebook/**
-      url: http://notebook:8080
+      url: http://${NOTEBOOK_SERVICE}:${NOTEBOOK_SERVICE_PORT}
 
 
 ribbon:

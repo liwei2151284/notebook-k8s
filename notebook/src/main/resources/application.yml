@@ -6,7 +6,7 @@ spring:
     name: notebook
   cloud:
     config:
-      uri: http://config:8888
+      uri: http://${CONFIG_SERVER}:${CONFIG_SERVER_PORT}
       fail-fast: true
       password: ${CONFIG_SERVICE_PASSWORD}
       username: user
@@ -18,17 +18,3 @@ spring:
       org.hibernate: WARN
 #  zipkin:
 #    base-url: http://${ZIPKIN_SERVER}:${ZIPKIN_SERVER_PORT}
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone:  ${DISCOVERY_URL:http://eureka-server:8761}/eureka/
-  instance:
-    preferIpAddress: true
-    #    leaseRenewalIntervalInSeconds: 1
-    #    leaseExpirationDurationInSeconds: 2
-    #    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-
-ribbon:
-  eureka:
-    enabled: true

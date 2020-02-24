@@ -29,7 +29,16 @@ spec:
     spec:
       containers:
       - name: gateway-service
-        image: art.local:8081/docker/notebook-microservices-k8s/gateway-service:latest
+        image: art.local:8081/docker/notebook-k8s/gateway-service:latest
+        env:
+          - name: CONFIG_SERVER
+            value: "192.168.99.100"
+          - name: CONFIG_SERVER_PORT
+            value: "30222"
+          - name: NOTEBOOK_SERVICE
+            value: "192.168.99.100"
+          - name: NOTEBOOK_SERVICE_PORT
+            value: "30555"
         ports:
         - containerPort: 8765
           protocol: TCP
